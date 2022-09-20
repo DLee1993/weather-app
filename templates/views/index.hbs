@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./scss/main.css">
+        <script src="./js/app.js" defer></script>
+        <script src="./js/animations.js" defer></script>
+    </head>
+    <body>
+        <header>
+            {{>header}}
+        </header>
+        <main class="main-content">
+            <form action="">
+                <input type="text" aria-label="input" placeholder="e.g. California" id="searchText">
+                <button class="submitBtn" id="submitBtn" type="submit">Search</button>
+            </form>
+            <p class="error-message"></p>
+            <section class="weatherData-container">
+                <p class="location-name"></p>
+                <p class="location-temp"></p>
+                <p class="location-country"></p>
+                <p class="location-latitude"></p>
+                <p class="location-longitude"></p>
+                <p class="location-humidity"></p>
+                <p class="location-timezone"></p>
+                <p class="location-weatherDescription"></p>
+                <p class="location-uvIndex"></p>
+                <p class="location-windDirection"></p>
+                <p class="location-windSpeed"></p>
+            </section>
+        </main>
+        <footer>
+            {{>footer}}
+        </footer>
+    </body>
+</html>

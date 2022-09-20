@@ -1,0 +1,11 @@
+.error-message-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    & h1{
+        margin-bottom: 20px;
+    }
+}
